@@ -148,6 +148,7 @@ strong {
     padding: 10px 30px;
 }
 
+
 /*---------------------------------------
   AVATAR IMAGE               
 -----------------------------------------*/
@@ -162,6 +163,15 @@ strong {
     width: 120.4px;
     height: 120.4px;
 }
+.avatar-user-image {
+    border-radius: var(--border-radius-small);
+    /* width: 100px;
+    height: 100px; */
+    height: 400px;
+
+    object-fit: fill;
+}
+
 
 /*---------------------------------------
   PRE LOADER               
@@ -285,6 +295,7 @@ strong {
     border-color: var(--secondary-color);
     color: var(--white-color);
 }
+
 
 .custom-link {
     background-color: var(--primary-color);
@@ -478,14 +489,14 @@ strong {
     }
 }
 
-.hero-title,
-.hero h2 {
-    background: var(--white-color);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-    border-radius: var(--border-radius-large);
+.hero-title {
+    /* background: var(--white-color); */
+    /* box-shadow: 0 0rem .3rem rgba(0, 0, 0, 0.175); */
+    border-radius: var(--border-radius-small);
     display: inline-block;
-    padding: 8px 24px;
+    padding: 8px 0px;
 }
+
 
 .hero-title {
     font-size: 44px;
@@ -508,7 +519,7 @@ strong {
     height: 350px;
     position: absolute;
     z-index: 22;
-    top: -50px;
+    top: 135px;
     right: 0;
     left: 0;
     margin: auto;
@@ -518,9 +529,9 @@ strong {
 .hero-image {
     position: absolute;
     z-index: 22;
-    top: 0;
+    top: 76px;
     width: 100%;
-    min-width: 550px;
+    min-width: 564px;
 }
 
 .hero svg {
